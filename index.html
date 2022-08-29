@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="head_bar">
+        <h1 class="head_bar_title">Bookshelf Apps</h1>
+    </header>
+
+    <main>
+        <section class="input_section">
+            <h2>Masukkan Buku Baru</h2>
+
+            <form class="form" id="inputBook">
+
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="number" required>
+                </div>
+
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox" name="inputBookIsComplete">
+                </div>
+
+                <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span id="typeBook"><strong>Belum
+                            Dibaca</strong></span></button>
+                <button id="editBook">Edit Buku dan Masukkan ke Rak <span id="editTypeBook"><strong>Belum
+                            Dibaca</strong></span></button>
+            </form>
+        </section>
+
+        <section class="search_section">
+            <h2>Cari Buku (Opsional)</h2>
+            <form id="searchBook">
+                <div class="input">
+                    <label for="searchBookTitle">Judul</label>
+                    <input id="searchBookTitle" type="text">
+                </div>
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section class="book_shelf">
+            <h2>Belum selesai dibaca</h2>
+
+            <div id="incompleteBookshelfList" class="book_list">
+                <!-- data buku -->
+            </div>
+        </section>
+
+        <section class="book_shelf">
+            <h2>Selesai dibaca</h2>
+
+            <div id="completeBookshelfList" class="book_list">
+                <!-- data buku -->
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

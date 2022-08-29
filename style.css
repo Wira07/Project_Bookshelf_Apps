@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-family: 'poppins';
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 18px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(68, 0, 194);
+    color: white;
+    top: 0;
+    position: sticky;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 16px;
+}
+
+footer {
+    padding: 12px;
+    color: white;
+    background-color: rgb(68, 0, 194);
+    text-align: center;
+    font-weight: bold;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input_section>h2 {
+    text-align: center;
+    color: rgb(68, 0, 194);
+}
+
+.input_section>form>.input {
+    margin: 8px 0;
+}
+
+.input_section>form>button {
+    background-color: rgb(68, 0, 194);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.input-section>form>#editBook,
+.input-section>form>#bookSubmit {
+    background: #b17070;
+    color: #fff;
+    padding: 8px;
+    width: 50%;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.input_section>form>button>span {
+    font-weight: bold;
+}
+
+.input-section>form>button>#editBook {
+    display: none;
+}
+
+.input-section>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 65px;
+    margin: 10px 0;
+}
+
+.input_section>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section>form>.input>label {
+    color: springgreen;
+    font-weight: bold;
+}
+
+.input_section>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section>form>.input_inline>label {
+    color: springgreen;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search_section>h2 {
+    color: rgb(68, 0, 194);
+}
+
+.search_section>form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section>form>label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section>form>input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section>form>button {
+    background-color: rgb(68, 0, 194);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    background: #fff;
+
+}
+
+.book_shelf>h2 {
+    color: springgreen;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* .book_shelf>.book_list {
+    padding: 16px;
+} */
+
+.book_shelf>.book_list>.book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_shelf>.book_list>.book_item>.info>h3,
+p {
+    margin: 8px 0;
+}
+
+.book_title {
+    font-family: serif;
+}
+
+.book_shelf>.book_list>.book_item>.action {
+    display: flex;
+    align-items: center;
+}
+
+.book_shelf>.book_list>.book_item>.action>button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.check {
+    background-size: contain;
+    background-color: green;
+    width: 80px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.edit {
+    background-size: contain;
+    background-color: yellow;
+    width: 80px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.trash {
+    background-size: contain;
+    background-color: red;
+    width: 80px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.undo {
+    background-size: contain;
+    background-color: cornflowerblue;
+    width: 80px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check:focus,
+.trash {
+    outline: none;
+}
